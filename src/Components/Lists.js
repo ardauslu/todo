@@ -3,11 +3,9 @@ import ListItem from './ListItem'
 
 const Lists = (props) => {
   return (
-    <div>  {props.items.map((expense) => (
+    <div>  {props.items.map((list) => (
       <ListItem
-        title={expense.title}
-        amount={expense.amount}
-        date={expense.date}
+        title={list.title}
       />
     ))}</div>
   )

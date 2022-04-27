@@ -4,6 +4,7 @@ import ListForm from './ListForm';
 import NewList from './NewList';
 import { useState } from 'react';
 import Lists from './Lists';
+import Items from './Items';
 
 const DUMMY_LIST = [
   {

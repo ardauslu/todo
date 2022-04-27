@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+import ItemDetail from './ItemDetail'
 
-const Items = () => {
-  useEffect(() => {
-
-  },[]);
-  const [item, setItem] = useState({});
+const Items = (props) => {
   return (
-    <div>
-      <h1>Items</h1>
-    </div>
-  )
+    <div>  {props.data.map((list) => (
+      <ItemDetail
+        title={list.title}
+        date={list.date}
+      />
+    ))}</div>
+  );
 }
 
 export default Items

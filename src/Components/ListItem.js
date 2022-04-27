@@ -1,10 +1,10 @@
 import './ListItem.css';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const ListItem = (props) => {
- const params = useParams();
+  let i = 1;
   const navigate = useNavigate();
   const listHandler = () => {
-    navigate(`/dashboard/${params.id}`);
+    navigate(`/dashboard/${i}`);
   }
 return (
 <div className='list-item' onClick={listHandler}>
